@@ -279,7 +279,6 @@ footer .span-logo {
 .f-logo {
   display: inline-block;
   margin-bottom: 16px;
-  text-align: center;
 }
 
 .footer-social-container {
@@ -347,7 +346,6 @@ footer .span-logo {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
-  text-align: center;
 }
 
 .subs-input {
@@ -407,56 +405,82 @@ footer .span-logo {
 /* Media footer */
 
 @media screen and (min-width: 768px) {
+  .foot-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .logo-p-container {
+    margin-bottom: 72px;
+    align-items: normal;
+  }
+
   .p-footer {
     max-width: 264px;
   }
 
-  .
+  .footer-social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .footer-social-container {
+    margin-bottom: 0;
+  }
+
+  .subs-form {
+    align-items: baseline;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .subs-input {
+    width: 264px;
+  }
 }
+
+/* ------------------------------------------------------- */
 
 @media screen and (min-width: 1158px) {
   .footer {
-padding: 100px 0;
-}
+    padding: 100px 0;
+  }
 
-.p-footer {
-max-width: 264px;
-}
+  .foot-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
 
-.foot-container {
-align-items: baseline;
-}
+  .logo-p-container {
+    margin-right: 120px;
+    margin-bottom: 0;
+    align-items: normal;
+  }
 
-.logo-p-container {
-margin-right: 120px;
- 
-}
+  .footer-social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
 
-.footer-social-list {
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 16px;
-}
+  .footer-social-container {
+    margin-right: 80px;
+    margin-bottom: 0;
+  }
 
-.footer-social-container {
-margin-right: 80px;
- 
-}
+  .subs-form {
+    align-items: baseline;
+    flex-direction: row;
+    gap: 24px;
+  }
 
-.subs-form {
-display: flex;
-align-items: flex-end;
-gap: 24px;
-}
-
-.subs-input {
-width: 264px;
-}
-
-.subs-input::placeholder {
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+  .subs-input::placeholder {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 }
 
 /**
