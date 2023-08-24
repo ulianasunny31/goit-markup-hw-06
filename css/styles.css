@@ -113,7 +113,7 @@ img {
 .menu-icon {
   stroke: var(--navy-blue);
 }
-/*  
+
 .modal-close {
   position: absolute;
   top: 24px;
@@ -236,7 +236,7 @@ img {
     display: none;
   }
 }
- /*   */
+/* Media  */
 
 @media (min-width: 768px) {
   .menu-toggle {
@@ -251,10 +251,6 @@ img {
 .footer {
   background-color: var(--navy-blue);
   padding: 97px 0;
-}
-
-.foot-container {
-  max-width: 398px;
 }
 
 .p-footer {
@@ -335,9 +331,6 @@ footer .span-logo {
   margin-bottom: 16px;
 }
 
-.subs-form {
-}
-
 .subs-p {
   color: var(--white);
   font-size: 16px;
@@ -345,6 +338,7 @@ footer .span-logo {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .subs-input {
@@ -407,17 +401,24 @@ footer .span-logo {
 @media screen and (min-width: 768px) {
   .foot-container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     max-width: 584px;
+    column-gap: 24px;
+    row-gap: 72px;
   }
 
   .logo-p-container {
-    margin-bottom: 72px;
     align-items: normal;
   }
 
   .p-footer {
     max-width: 264px;
+  }
+
+  .footer-social-container {
+    justify-content: normal;
+    align-items: normal;
   }
 
   .footer-social-list {
@@ -427,14 +428,15 @@ footer .span-logo {
     gap: 16px;
   }
 
-  .footer-social-container {
-    margin-bottom: 0;
-  }
-
   .subs-form {
+    display: flex;
     align-items: baseline;
     flex-direction: row;
     gap: 24px;
+  }
+
+  .subs-p {
+    text-align: left;
   }
 
   .subs-input {
@@ -453,12 +455,19 @@ footer .span-logo {
     display: flex;
     flex-wrap: nowrap;
     align-items: baseline;
+    max-width: 1158px;
+    column-gap: 0;
+    row-gap: 0;
   }
 
   .logo-p-container {
     margin-right: 120px;
     margin-bottom: 0;
-    align-items: normal;
+  }
+
+  .p-footer {
+    max-width: 268px;
+    text-align: none;
   }
 
   .footer-social-list {
@@ -594,6 +603,22 @@ address {
   }
   address {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .h-logo {
+    margin-right: 120px;
+  }
+
+  .adress-list {
+    flex-wrap: wrap;
+    row-gap: 12px;
+    justify-content: flex-end;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
   }
 }
 
