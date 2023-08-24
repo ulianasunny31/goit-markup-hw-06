@@ -253,6 +253,10 @@ img {
   padding: 97px 0;
 }
 
+.foot-container {
+  max-width: 398px;
+}
+
 .p-footer {
   color: var(--cloud);
   font-size: 16px;
@@ -404,6 +408,7 @@ footer .span-logo {
   .foot-container {
     display: flex;
     flex-wrap: wrap;
+    max-width: 584px;
   }
 
   .logo-p-container {
