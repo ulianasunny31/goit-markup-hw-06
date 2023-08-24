@@ -148,6 +148,10 @@ img {
   fill: var(--white);
 }
 
+.menu-contain {
+  margin: 0 auto;
+}
+
 .menu-container {
   display: flex;
   flex-direction: column;
@@ -162,7 +166,7 @@ img {
   padding-right: 35px;
   padding-bottom: 40px;
   z-index: 999;
-  /* transform: translateX(100%); */
+  transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
 
@@ -179,6 +183,7 @@ img {
 
 .menu-list {
   margin-bottom: auto;
+  gap: 40px;
 }
 
 .menu-list-item .menu-link {
