@@ -183,7 +183,10 @@ img {
 
 .menu-list {
   margin-bottom: auto;
-  gap: 40px;
+}
+
+li .menu-list-item:not(:last-child) {
+  margin-bottom: 40px;
 }
 
 .menu-list-item .menu-link {
