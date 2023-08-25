@@ -584,19 +584,8 @@ footer .span-logo {
 
 .navigation .link:hover,
 .navigation .link:focus,
-.nav-link.current {
+.nav-link .current {
   color: var(--ocean);
-}
-
-.nav-link.current::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--ocean);
 }
 
 address {
