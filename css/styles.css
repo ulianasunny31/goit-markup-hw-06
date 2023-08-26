@@ -673,7 +673,7 @@ address {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/main-section/office-mob.jpg);
+    url("../images/main-section/office-mob.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -717,11 +717,15 @@ address {
 
 /* media first section */
 
-@media screen and (min-device-pixel-ratio: 2),
+@media (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
-  .box {
-    background-image: url("../images/main-section/office-mob@2x.jpg");
+  .title-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/main-section/office-mob@2x.jpg");
   }
 }
 
@@ -732,7 +736,7 @@ address {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/main-section/office-tabl.jpg);
+      url("../images/main-section/office-tabl.jpg");
   }
 
   .main-title {
@@ -745,8 +749,12 @@ address {
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .box {
-      background-image: url("../images/main-section/office-tabl@2x.jpg");
+    .title-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/main-section/office-tabl@2x.jpg");
     }
   }
 }
@@ -759,7 +767,7 @@ address {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/main-section/people-office.jpg);
+      url("../images/main-section/people-office.jpg");
   }
 
   .main-title {
@@ -769,8 +777,12 @@ address {
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .box {
-      background-image: url("../images/main-section/people-office@2x.jpg");
+    .title-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/main-section/people-office@2x.jpg");
     }
   }
 }
